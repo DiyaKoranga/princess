@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>All products</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="head">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <IMG src="IMAGES/BRAND.png" width="100px"></IMG>
+                </div>
+                <nav>
+                    <ul id="items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="IMAGES/sia.png" width="30px" height="30px"></a>
+                <img src="IMAGES/menu.png" class="menu" onclick="menutoggle()">
+            </div>
+
+        </div>
+    </div>
+    <!-- cartdetails -->
+    <div class="smallcontent crt">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Sub total</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="info">
+                        <img src="IMAGES/macbookair2018.jpg" >
+                        <div>
+                            <p>Macbook Air 2020</p>
+                            <small>70,000 Rs<BR></small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>70,000 Rs</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="info">
+                        <img src="IMAGES/iphone13.jpg" >
+                        <div>
+                            <p>Iphone 13</p>
+                            <small>1,19,000 Rs<BR></small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>1,19,000 Rs</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="info">
+                        <img src="IMAGES/Apple-MYFM2HN-A-Tablets-491901107-i-1-1200Wx1200H.jfif" >
+                        <div>
+                            <p>Ipad</p>
+                            <small>44,000 Rs<BR></small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>44,000 Rs</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="info">
+                        <img src="IMAGES/pencil.jfif" >
+                        <div>
+                            <p>Apple pencil 1st Generation</p>
+                            <small>10,000 Rs<BR></small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>10,000 Rs</td>
+            </tr>
+        </table>
+        <div class="total">
+            <table>
+                <tr>
+                    <td>
+                        Total
+                    </td>
+                    <td>2,43,000 Rs</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="content">
+            <div class="row">
+                <div class="fc">
+                    <h3>Download our app</h3>
+                    <p>Download for ios and android</p>
+                    <div class="app">
+                        <img src="IMAGES/app-store.png" alt="">
+                        <img src="IMAGES/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="fc1">
+                    <a href="index.html"><img src="IMAGES/BRAND.png" alt=""></a>
+                </div>
+                <div class="fc2">
+                    <h3>Some useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>return and Refund Policy</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="fc3">
+                    <h3>Follow us on</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+
+                        <a href="https://www.instagram.com/sia.koranga/"><li>Instagram</li></a>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- javascript for toggling the menu -->
+    <script>
+       var items=document.getElementById(items);
+       items.style.maxHeight = "0px";
+       function menutoggle(){
+           if(items.style.maxHeight=="0px"){
+               
+               items.style.maxHeight="200px";
+           }
+           else{
+               items.style.maxHeight="0px";
+           }
+       }
+       
+    </script>
+</body>
+
+</html>

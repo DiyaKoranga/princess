@@ -1,0 +1,434 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2
+{
+    flex-basis:50%;
+    min-width:300px;
+}
+.col-2 image{
+    max-width: 100%;
+padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 35px;
+    line-height: 45px;
+    margin: 25px 0;
+}
+.button{
+    display: inline-block;
+    background: purple;
+    color: white;
+    
+    transition: background 0.5s;
+}
+.button:hover{
+    background: brown;
+
+}
+.head{
+    background: radial-gradient(white,lavender);
+}
+.head .row{
+margin-top: 70px;
+}
+.content{
+    margin: 70px 0;
+}
+.col3{
+
+    flex: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col3 img{
+    width: 100%;
+}
+.smallcontent{
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.col4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col4 img{
+    width: 100px;
+}
+.heading{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+}
+.heading::after{
+    content: '';
+    background: purple;
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: black;
+    font-weight: normal;
+}
+.col4 p{
+    font-size: 14px;
+}
+.col4 :hover{
+transform: translateY(-4px);
+}
+.sale{
+    margin: 80px;
+    padding: 30px 0;
+}
+.col-2 .sale-img{
+    padding: 50px;
+}
+small{
+    color:purple;
+}
+.footer{
+    background: lavender;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: black;
+    margin-bottom: 20px;
+}
+.fc, .fc1, .fc2, .fc3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.fc{
+    flex-basis: 30%;
+}
+.fc1{
+    flex:1;
+    text-align: center;
+}
+.fc1 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.fc2, .fc3{
+    flex-basis: 12%;
+    text-align: center;
+
+}
+ul{
+list-style-type: none;
+}
+.app{
+    margin-top: 20px;
+}
+.app img{
+    width: 140px;
+}
+.menu{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+color: white;
+    }
+    .menu{ 
+        display: block;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width:770px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col3, .col4{
+        flex-basis: 100%;
+    }
+    .sp .row{
+        text-align: left;
+    }
+    .sp .col-2{
+        padding: 20px 0px;
+    }
+    .sp h1{
+        font-size: 32px;
+        line-height: 22px;
+
+    }
+    .info p{
+        display: none;
+    }
+    .sale-img{
+
+        width: 300px;
+    }
+}
+.row2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid purple;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.btn{
+    margin: 0px auto 80px;
+}
+.btn span{
+ 
+    display: inline-block;
+    border: 1px solid purple;
+   
+    width: 50px;
+    height: 50px;
+    
+ 
+    cursor: pointer;
+}
+.btn span:hover{
+    background: lavender;
+    color: white;
+}
+.sp{
+    margin-top: 80px;
+
+}
+.sp .col-2 img{
+    padding: 0;
+}
+.sp .col-2 {
+    padding: 20px;
+}
+.sp h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.sp select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.sp input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid purple;
+}
+input:focus{
+    outline: none;
+}
+.imgrow{
+    display: flex;
+    justify-content: space-between;
+}
+.imgcol{
+    flex-basis: 24%;
+    cursor: pointer;
+    
+
+}
+.imgcol img{
+    width: 65%;
+}
+/* cart */
+.crt{
+    margin: 80px auto;
+
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+table{
+width: 100%;
+border-collapse: collapse;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: black;
+    background: lavender;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: black;
+    font-size: 12px;
+}
+td img{
+    height: 80px;
+    width: 80px;
+    margin-right: 10px  ;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.total table{
+    border-top: 3px solid purple;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+/* account */
+.acc{
+    padding: 50px 0px;
+    background: radial-gradient(white,lavender);
+}
+.formm{
+    background: white;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0 lavenderblush;
+    overflow: hidden;
+}
+.formm span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.formbtn{
+    display: inline-block;
+
+}
+.formm form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px ;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid lavenderblush ;
+    
+}
+form .button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .button:focus{
+    outline: none;
+}
+#log{
+    left: -300px;
+}
+#reg{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#ind{
+    width: 100px;
+    border: none;
+    background: purple;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}

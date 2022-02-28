@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>All products</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="head">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <IMG src="IMAGES/BRAND.png" width="100px"></IMG>
+                </div>
+                <nav>
+                    <ul id="items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="IMAGES/sia.png" width="30px" height="30px">
+                <img src="IMAGES/menu.png" class="menu" onclick="menutoggle()">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="smallcontent sp">
+        <div class="row">
+            <div class="col-2">
+
+                <img src="IMAGES/airpodspro.jpg" width="100%" id="proimg">
+            </div>
+            <div class="imgrow">
+                <div class="imgcol">
+                    <img src="IMAGES/airpodspro1.jpg" id="simg">
+
+                </div>
+                <div class="imgcol">
+                    <img src="IMAGES/airpodspro2.jpg"  id="simg">
+
+                </div>
+                <div class="imgcol">
+                    <img src="IMAGES/airpodspro.jpg"  id="simg">
+                </div>
+                
+            </div>
+            <div class="col-2">
+
+                <h1>Airpods Pro</h1>
+                <h4>25000 Rs</h4>
+                
+                <input type="number" value="1">
+                <a href="" class="button">Add to cart</a>
+                <h3>Product Specification<br></h3>
+                <p>Good sound quaity and best battery life upto 12 hours non-stop, available in four different colors!!!
+                    Better than airpods, extra 10% off if you will exchange it with the previous version of airpods!
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="smallcontent">
+        <div class="row row2">
+            <h2>Related Products</h2>
+            <a href="products.html">view more</a>
+        </div>
+    </div>
+    <div class="smallcontent">
+        <div class="row">
+            <div class="col4">
+                <a href="productsdetails.html"><img src="IMAGES/MACBOOK.jfif" alt="">
+                <h4>Macbook Air</h4></a>
+                <p> 89,000 Rs</p>
+            </div>
+            <div class="col4">
+               <a href="applewatch.html"> <img src="IMAGES/fp.jfif" alt="">
+                <h4>Apple watch</h4></a>
+                <p> 30,000 Rs</p>
+            </div>
+            <div class="col4">
+                <a href="11pro.html"><img src="IMAGES/iPhone-11-Pro-64GB-Space-Grey-491584672-i-1-1200Wx1200H.jfif" alt="">
+                <h4>Iphone 11 Pro 64GB</h4></a>
+                <p> 72,000 Rs</p>
+            </div>
+            <div class="col4">
+                <a href="ipad.html"><img src="IMAGES/Apple-MYFM2HN-A-Tablets-491901107-i-1-1200Wx1200H.jfif" alt="">
+                <h4>Ipad </h4></a>
+                <p> 44,000 Rs</p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="content">
+            <div class="row">
+                <div class="fc">
+                    <h3>Download our app</h3>
+                    <p>Download for ios and android</p>
+                    <div class="app">
+                        <img src="IMAGES/app-store.png" alt="">
+                        <img src="IMAGES/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="fc1">
+                    <a href="index.html"><img src="IMAGES/BRAND.png" alt=""></a>
+                </div>
+                <div class="fc2">
+                    <h3>Some useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>return and Refund Policy</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="fc3">
+                    <h3>Follow us on</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+
+                        <a href="https://www.instagram.com/sia.koranga/"><li>Instagram</li></a>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- javascript for toggling the menu -->
+    <script>
+       var items=document.getElementById(items);
+       items.style.maxHeight = "0px";
+       function menutoggle(){
+           if(items.style.maxHeight=="0px"){
+               
+               items.style.maxHeight="200px";
+           }
+           else{
+               items.style.maxHeight="0px";
+           }
+       }
+       
+    </script>
+</body>
+
+</html>
